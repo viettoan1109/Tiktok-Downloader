@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">TikTok Downloader</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    //home
+    <string name="title_home">Downloader</string>
+    <string name="edt_home_hint">Paste Link Tiktok Here</string>
+    <string name="btn_home_open">Open Tiktok</string>
+    <string name="btn_home_download">Download Video</string>
+
+    //download
+    <string name="title_download">My Download</string>
+    <string name="text_download_select">Select</string>
+    <string name="tab_download_video">Video</string>
+    <string name="tab_download_music">Music</string>
+    <string name="text_download_video">No Any Video</string>
+    <string name="text_download_music">No Any Music</string>
+
+    //setting
+    <string name="title_setting">Setting</string>
+    <string name="text_setting_turn_on">Turn on Switch to download Tik Tok video</string>
+    <string name="text_setting_switch">Switch on to Auto Save</string>
+    <string name="text_setting_support">Support</string>
+    <string name="text_setting_rate">Rate App </string>
+    <string name="text_setting_share">Share App</string>
+    <string name="text_setting_feedback">Feedback</string>
+    <string name="text_setting_policy">Privacy Policy</string>
+
+    //dialog download
+    <string name="download_question">You want download video? </string>
+    <string name="download_water">With watermark</string>
+    <string name="download_no_water">No watermark</string>
+
+    //dialog delete
+    <string name="deleta_question">Are you sure want to delete?</string>
+
+</resources>

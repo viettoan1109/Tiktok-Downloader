@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="true"
+            android:paddingBottom="120dp"
+            tools:context=".ui.home.HomeFragment">
+
+            <LinearLayout
+                android:id="@+id/linear_home_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="16dp"
+                android:elevation="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:layout_width="104dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="16dp"
+                    android:src="@drawable/img_logo" />
+
+                <TextView
+                    android:layout_width="127dp"
+                    android:layout_height="28dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="9dp"
+                    android:fontFamily="@font/raleway_medium"
+                    android:text="@string/title_home"
+                    android:textColor="@color/black"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray"
+                app:layout_constraintTop_toBottomOf="@id/linear_home_toolbar" />
+
+
+            <RelativeLayout
+                android:id="@+id/rl_home_link"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:elevation="5dp"
+                android:background="@drawable/custom_background_edt"
+                app:layout_constraintTop_toBottomOf="@id/linear_home_toolbar">
+
+
+                <EditText
+                    android:id="@+id/edt_home_link"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_toStartOf="@id/img_home_paste"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/raleway_medium"
+                    android:hint="@string/edt_home_hint"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/img_home_paste"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="24dp"
+                    android:src="@drawable/ic_paste" />
+
+                <ImageView
+                    android:id="@+id/img_home_close"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginEnd="24dp"
+                    android:src="@drawable/ic_close"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            <android.widget.Button
+                android:id="@+id/btn_home_open"
+                android:layout_width="207dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/custom_background_button"
+                android:fontFamily="@font/raleway_medium"
+                android:text="@string/btn_home_open"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/rl_home_link" />
+
+            <RelativeLayout
+                android:id="@+id/rl_home_play"
+                android:layout_width="279dp"
+                android:layout_height="402dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rl_home_link">
+
+                <VideoView
+                    android:id="@+id/video_home"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/img_home_thumbnail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/img_home_play"
+                    android:layout_width="106dp"
+                    android:layout_height="106dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="204dp"
+                    android:src="@drawable/ic_ion_play_circle"
+                    android:visibility="invisible" />
+
+                <ProgressBar
+                    android:id="@+id/progress_home_play"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:visibility="invisible" />
+
+            </RelativeLayout>
+
+            <android.widget.Button
+                android:id="@+id/btn_home_download"
+                android:layout_width="207dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/custom_background_button"
+                android:text="@string/btn_home_download"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rl_home_play" />
+
+            <WebView
+                android:id="@+id/webView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</layout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/search_block"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="@drawable/custom_background_edt"
+        android:orientation="horizontal">
+
+
+        <com.tapbi.tiktokdownloader.ui.custom.EditTexLink
+            android:id="@+id/edt_link"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="24dp"
+            android:background="@null"
+            android:ellipsize="end"
+            android:inputType="text"
+            android:maxLines="1"
+            android:layout_weight="1"
+            android:scrollHorizontally="true"
+            android:textSize="18sp"
+            android:fontFamily="@font/raleway_medium"
+            android:hint="@string/edt_home_hint"
+            android:gravity="start|center_vertical"
+            android:imeOptions="actionSearch"
+            android:singleLine="true" />
+
+        <ImageView
+            android:id="@+id/img_paste"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/ic_paste" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
