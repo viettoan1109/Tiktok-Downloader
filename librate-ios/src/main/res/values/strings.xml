@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">FiveStarsLibrary</string>
+    <string name="title_dialog">RATE THIS APP</string>
+    <string name="content">How much do you love our app?</string>
+</resources>

@@ -1,0 +1,3 @@
+include ':librate-ios'
+include ':app'
+rootProject.name = "TikTok Downloader"

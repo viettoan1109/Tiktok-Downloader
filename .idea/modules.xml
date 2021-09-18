@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TikTok_Downloader.iml" filepath="$PROJECT_DIR$/.idea/modules/TikTok_Downloader.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/TikTok_Downloader.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/TikTok_Downloader.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/librate-ios/TikTok_Downloader.librate-ios.iml" filepath="$PROJECT_DIR$/.idea/modules/librate-ios/TikTok_Downloader.librate-ios.iml" />
+    </modules>
+  </component>
+</project>
